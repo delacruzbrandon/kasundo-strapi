@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "riders",
+  "info": {
+    "singularName": "rider",
+    "pluralName": "riders",
+    "displayName": "Rider"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RiderId": {
+      "type": "uid",
+      "required": true
+    },
+    "FirstName": {
+      "type": "string",
+      "required": true
+    },
+    "LastName": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "MobileNum": {
+      "type": "integer",
+      "required": true,
+      "default": 0,
+      "unique": true
+    },
+    "Address": {
+      "type": "string",
+      "required": true
+    },
+    "AvatarUrl": {
+      "type": "string",
+      "required": true
+    },
+    "VerifiedStatus": {
+      "type": "enumeration",
+      "required": true,
+      "default": "INITIAL",
+      "enumName": "verifiedStatus",
+      "enum": [
+        "INITIAL",
+        "VERIFIED"
+      ]
+    }
+  }
+}
