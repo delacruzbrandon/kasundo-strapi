@@ -11,12 +11,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "default": "Untitled",
       "required": true
     },
-    "CoverPhoto": {
+    "coverPhoto": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -24,12 +24,22 @@
         "images"
       ]
     },
-    "Body": {
+    "body": {
       "type": "blocks",
       "required": true
     },
-    "EventId": {
+    "eventId": {
       "type": "uid",
+      "required": true
+    },
+    "scheduledDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "default": "No Description",
+      "maxLength": 120,
       "required": true
     }
   }
