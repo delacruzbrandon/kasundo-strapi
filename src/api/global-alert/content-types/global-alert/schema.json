@@ -68,6 +68,20 @@
       },
       "required": true,
       "default": false
+    },
+    "feature": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
     }
   }
 }
