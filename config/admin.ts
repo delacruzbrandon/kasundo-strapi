@@ -9,7 +9,13 @@ const getPreviewPathname = (uid, { locale, document }): string => {
       if (!slug) {
         return `/events`; // Blog listing page
       }
-      return `/events/${slug}`; // Individual article page
+      return `/event/${slug}`; // Individual article page
+    }
+    case "api::blog.blog": {
+      if (!slug) {
+        return `/blog`; // Blog listing page
+      }
+      return `/blogs/${slug}`; // Individual article page
     }
     default: {
       return null;
